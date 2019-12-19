@@ -1,0 +1,392 @@
+@-webkit-viewport   { width: device-width; }
+@-moz-viewport      { width: device-width; }
+@-ms-viewport       { width: device-width; }
+@-o-viewport        { width: device-width; }
+@viewport           { width: device-width; }
+
+html, body{
+    margin:0px;
+    width:100%;
+    background-color: gray;
+}
+
+/* TOP BAR DO SITE */
+.top-bar{
+    background-color:#333333;
+    border-bottom:1px solid #333333;
+    height:35px;
+    line-height:1;
+    width:100%;
+}
+.conteiner{
+    margin-left:4%;
+    margin-right:4%;
+    padding-right:1%;
+    padding-left: 1%;
+    height:38.667px;
+}
+.row{
+
+    box-sizing: border-box;
+    height:38.667px;
+}
+.topo-left{
+position: relative;
+float: left;
+background-color:white;
+
+}
+.topo-left, a.top-left{
+background-image: url(./cafe.jpg);
+height:36px;
+width: 50px;
+
+}
+
+.topo-right{
+    position: relative;
+    float: right;
+    display: inline-block;
+    height:36px;
+    line-height:35px;
+    width:224.563px;
+}
+.topo-right a{
+
+    font-size:15px;
+    color:white;
+    cursor:pointer;
+    margin-left:5px;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: sans-serif;
+    text-transform:uppercase;
+}
+.loginb{
+    background-color: gray;
+    border: dashed 2px white;
+    color:white;
+    padding: 2px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+    width:147.88px;
+    height: 24.67px;
+    cursor: pointer;
+}
+.cadastro{
+    background-color: gray;
+    border: dashed 2px white;
+    color:white;
+    padding: 2px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+    width:147.88px;
+    height: 24.67px;
+    cursor: pointer;
+}
+.login{
+    width: 62.49px;
+    height: 16.67px;
+}
+
+/* MENU DE NAVEGA��O DO SITE */
+
+.menu{
+    position:absolute;
+    top:36px;
+    width:100%;
+    padding-top:6px;
+    padding-bottom:6px;
+    background-color:rgba(240,240,240,0.84);
+    height: 4vh;
+    border:none;
+}
+.rw{
+    margin-right: 6px;
+    margin-left: 6px;
+    padding-right: 1%;
+    padding-left: 1%;
+    height:26px;
+}
+
+.rw-1{
+    height:26px;
+    margin-left: -1%;
+    margin-right: -1%;
+}
+.div-1{
+    height:26px;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin:0;
+}
+.div-2{
+    height:26px;
+    padding:0;
+}
+ul{
+    height:26px;
+    text-align:center;
+    color: #505050;
+    font-weight: 600;
+    font-size:15px;
+    font-family: sans-serif;
+    display: block;
+    padding-inline-start: 0px;
+    margin:0;
+}
+li.inicio{
+    color:#2d2825;
+}
+li{
+    display:inline-block;
+    height:26px;
+    text-align: left;
+}
+li a{
+    line-height:24px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top:1px;
+    padding-bottom:1px;
+    width:100%;
+    display:inline-block;
+}
+.caret{
+    border-top-color: #505050;
+    border-bottom-color: #505050;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px dashed;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+
+/*  CONTEINER DE VISUALIZAÇÃO  DE CURSOS*/
+.c1{
+    display: block;
+    top:100%;
+    position:absolute;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+.c1 h3{
+    text-align: center;
+}
+
+/* CONTEINER PRINCIPAL 2 DO SITE */
+.conteiner1{
+    width:100%;
+    height:211px;
+    margin:60px 0px 40px 0px;
+}
+.c2 .conteiner1{
+	border: solid 0.3px black;
+    background-image: url(./painel.jpg);
+    position:absolute;
+    top:30%;
+    padding-top: 15px;
+    padding-bottom:25px;
+    padding-right:2%;
+    padding-left:2%;
+    margin-right: 4%;
+    margin-left: 4%;
+    width: 90%;
+    height:284px;
+}
+.colum-1{
+    background-image: url(./lousa.jpg);
+    background-size: 100%;
+    position:relative;
+    float:left;
+    height:284px;
+    width:38%;
+    color: white;
+}
+
+/* FORMS INPUTS E BUTTONS */
+.colum-1 form{
+    color:white;
+    margin-top: 6%;
+    margin-bottom: 4%;
+    border-bottom: dashed 1px white;
+}
+.colum-2 form{
+    border-bottom: dashed 1px white;
+    margin-top: 6%;
+    margin-bottom: 4%;
+    color:white;
+}
+
+input, textarea, button{
+    padding: 5px;
+    margin-bottom: 5px;
+    margin-top:5px;
+    border-radius: 5px;
+}
+.add{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+h5{
+text-align: center;
+font-size: 16px;
+color:white;
+}
+.errors{
+    color: black;
+    background-color:red;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 5px;
+    padding: 5px;
+    font-weight: bolder;
+}
+.sucess{
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 5px;
+    padding: 5px;
+    font-weight: bolder;
+}
+
+
+.colum-2{
+    background-image: url(./lousa.jpg);
+    background-size: 100%;
+    height:284px;
+    position:relative;
+    float:right;
+    width:55%;
+}
+table{
+    margin-top:5%;
+    margin-bottom:5%;
+    border:solid 2px black;
+    width: 500px;
+}
+
+th{
+    text-align: left;
+    width:120px;
+    border-right: solid 2px black;
+    border-bottom: solid 1px black;
+}
+td{
+    text-align: justify;
+    border-bottom: solid 1px black;
+}
+
+/* CADASTRO || LOGIN.HTML*/
+.a_CadLog{
+  position:absolute;
+  background-color: #333333;
+  margin-top:50px;
+  margin-left: 40%;
+  margin-right:40%;
+  border: dashed 2px white;
+  text-align:center;
+}
+.a_CadLog{
+  position:relative;
+  margin-top:15px;
+  margin-bottom:15px;
+  border-radius: 5px;
+  padding:4px;
+}
+
+
+
+/* RESPONSIVIDADE */
+@media screen and (max-width: 1280px){
+.conteiner{}
+.row{}
+.colum-1{z-index:100;}
+
+@media screen and (min-width: 780px) and (max-width: 992px){
+.topo-right{margin-right:1%;}
+.topo-left{margin-left: 1%;}
+.conteiner{width:100%; margin:0; padding:0;}
+.row{width:100%;}
+.rw, .rw-1, .div-1, .div-2{margin:0; padding:0; width:100%;}
+.colum-1{width:100%;}
+.colum-2{width:100%;}
+.redb{width:100%; box-sizing:border-box;}
+.grayb{width:100%; box-sizing:border-box;}
+.goldb{width:100%;box-sizing:border-box; }
+
+}
+
+@media screen and (min-width:480px) and (max-width: 780px){
+.wrapper{height:72px; background-color:black;}
+.conteiner{width:100%; margin:0; padding:0;}
+.row{width:100%;}
+.topo-right{ margin-right:0;}
+.topo-left{display:none;}
+nav{display:none;}
+.c1{padding-top: 10px; padding-bottom:10px;}
+.c2 .conteiner1{padding-top:10px; padding-bottom:10px; }
+.colum-1{width:100%;}
+.colum-2{width:100%;}
+.redb{width:100%; box-sizing:border-box;}
+.grayb{width:100%; box-sizing:border-box;}
+.goldb{width:100%;box-sizing:border-box; }
+}
+
+@media screen and (max-width: 480px){
+.wrapper{height:72px; background-color:black;}
+.conteiner{width:100%; margin:0; padding:0;}
+.row{width:100%;}
+.topo-right{ margin-right:0;}
+.topo-left{display:none;}
+nav{display:none;}
+
+off-canvas-toggle{
+background: rgba(255,255,255,0.15);
+    border: 0;
+    padding: 0;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+	z-index:100;
+}
+.btn{display: inline-block;
+    margin-bottom: 0;
+    font-weight: 700;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.7143;
+    border-radius: 3px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;}
+.fa{display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    width:12px;
+    height:14px;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;}
+
+.c1{padding-top: 10px; padding-bottom:10px;}
+.c2 .conteiner1{padding-top:10px; padding-bottom:10px; top:350px}
+.colum-1{width:100%;}
+.colum-2{width:100%;}
+.redb{width:100%; box-sizing:border-box;}
+.grayb{width:100%; box-sizing:border-box;}
+.goldb{width:100%;box-sizing:border-box; }
+
+}

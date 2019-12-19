@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <title>user Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <div class="top-bar">
+    <div class="conteiner">
+      <div class="row">
+        <div class="topo-left">
+          <a class="top-left" href="/index.html"> </a>
+        </div>
+        <div class="topo-right">
+          <a href="./login" class="login"> Sair </a>
+          <a href="./registro" class="cadastro"> Criar Conta</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <nav class="menu">
+    <div class="rw">
+      <div class="rw-1">
+        <div class="div-1">
+          <div class="div-2">
+            <ul class="navbar-nav">
+              <li class="inicio"><a> Início </a></li>
+              <li><a> Cursos <em class="caret"></em></a></li>
+              <li><a> Disciplinas <em class="caret"></em></a></li>
+              <li><a> Documentos <em class="caret"></em></a></li>
+              <li><a> Feramentas <em class="caret"></em></a></li>
+              <li><a> Privado <em class="caret"></em></a></li>
+              <li><a> Trabalhos <em class="caret"></em></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  </nav>
+
+
+  <div class="c2">
+    <div class="conteiner1">
+      <div class="colum-1">
+        <h5>Adicionar curso em sua lista:</h5>
+        <form action="/add" method="POST">
+
+
+          <label class="add" for="tema">Tema:</label>
+          <br>
+          <input size="35" class="add" type="text" name="tema">
+          <br>
+          <label class="add" for="descricao">Descrição:</label>
+          <br>
+          <input size="35" class="add" type="text" name="descricao">
+          <br>
+          <button class="add" type="submit">Adicionar</button>
+
+          {{#each errors}}
+          <div class="errors"> {{msg}} </div>
+          {{else}}
+          {{#if success_msg}}
+          <div class="sucess">
+            {{success_msg}}
+          </div>
+          {{/if}}
+
+          {{/each}}
+
+        </form>
+
+
+      </div>
+
+      <div class="colum-2">
+        <h5> Upload de arquivos: </h5>
+        <form action="/home/upload" method="POST" enctype="multipart/form-data">
+          <label class="add" for="nomef">Nome do arquivo:</label>
+          <br>
+          <input size="35" class="add" type="text" name="nomef">
+          <br>
+          <input class="add" type="file" name="file">
+          <br>
+          <input class="add" type="submit" value="Enviar"></button>
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="c1">
+    <div class="conteiner1">
+      <div class="lista">
+        <h3>Lista de uploads</h3>
+        {{#each uploads}}
+        <table>
+          <tr>
+            <th>
+              <h4>Nome:</h4>
+            </th>
+            <td>
+              {{name}}
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <h4>Tamanho:</h4>
+            </th>
+            <td>
+              {{size}}
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <h4>Data de upload:</h4>
+            </th>
+            <td>
+              {{createdAt}}
+            </td>
+          </tr>
+        </table>
+
+        {{else}}
+
+        {{/each}}
+      </div>
+
+    </div>
+  </div>
+
+
+</body>
+
+</html>

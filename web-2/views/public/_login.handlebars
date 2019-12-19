@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <form action="/logar" method="POST">
+    <div class="a_CadLog">
+        <h1>ÁREA DE LOGIN</h1>
+
+        {{#each errors}}
+            <div class="errors" style="margin-bottom:5px; margin-left:10px; margin-right:10px;"> {{msg}} </div>
+        {{else}}
+        {{/each}}
+
+
+        <label for="name">Login:</label>
+        <input type="text" id="nome" name ="nome" >
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" >
+        <button type="submit"> Login </button>
+    </div>
+    </form>     
+
+</body>
+
+</html>
