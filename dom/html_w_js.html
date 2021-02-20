@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Sintaxe's JS</title>
+    <meta charset="UTF-8"/>
+    <script>
+      alert("BEM VINDO KRL!")
+      window.confirm("Deseja prosseguir?");
+      var nome = window.prompt("What is your name?")
+      window.alert("Seja muito bem vindo " + nome + "!!")
+
+      function mudaLampada(tipo) {
+        if (tipo == 0) {
+          arquivo = "./exercicios/imagens/lampada_acesa.jpg"
+        }
+        if (tipo == 1) {
+          arquivo = "./exercicios/imagens/lampada_acesa.jpg"
+        }
+        if (tipo == 2) {
+          arquivo = "./exercicios/imagens/lampada.jpg"
+        }
+        if (tipo == 3) {
+          arquivo = "./exercicios/imagens/lampada_quebrada.jpg"
+        }
+        document
+          .getElementById('luz')
+          .src = arquivo
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Acenda e Apague a lampada:
+    </h2>
+    <img src="./lampada.jpg" id="luz" onmousemove="mudaLampada(0)" onmouseover="mudaLampada(1)" onmouseout="mudaLampada(2)" onclick="mudaLampada(3)"/>
+    <script type="text/javascript">
+      document.write("Hello " + nome + ", today is " + Date())
+    </script>
+  </body>
+  <html>

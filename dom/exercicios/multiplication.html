@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contador de numeros</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+
+        function contNumber() {
+            var inicio = document.getElementById('inicio')
+            inicio = Number(inicio.value)
+            var contador = document.getElementById('incremento')
+            contador = Number(contador.value)
+            var final = document.getElementById('final')
+            final = Number(final.value)
+            var conteudo = document.getElementById('conteudo')
+
+            for (var i = inicio; i <= final; i += contador) {
+                conteudo.innerHTML += `${i} `
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Sequencia de números</h1>
+    </header>
+
+    <section>
+        <div id="interacion">
+            <p>Início: </p>
+            <input type="number" id="inicio">
+            <br>
+            <p>Incremento: </p>
+            <input type="number" id="incremento">
+            <br>
+            <p>Final: </p>
+            <input type="number" id="final">
+            <br>
+            <br>
+            <input type="button" value="Contar" onclick="contNumber()">
+        </div>
+
+        <div id="conteudo"></div>
+    </section>
+
+    <footer>
+        <h6>11/10/19</h6>
+    </footer>
+
+    <script>
+    </script>
+</body>
+
+</html>

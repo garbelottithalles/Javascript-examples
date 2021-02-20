@@ -1,0 +1,60 @@
+body{
+  margin:0;
+  background: rgb(70, 142, 236);
+  font-size: 15px;
+  color:white;
+}
+header{
+  text-align:center;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: monospace;
+
+}
+section{
+  background-color:white;
+  border-radius: 10px;
+  padding:15px;
+  margin: auto;
+  width: 500px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.363);
+  color:gray;
+  font-weight: lighter;
+  font-family: arial;
+  position:relative;
+
+}
+p{
+  margin:0;
+  text-align:left;
+}
+#interacion{
+  position:relative;
+  float:left;
+}
+#conteudo{
+  position:relative;
+  margin-top: 10px;
+  color:black;
+  width:100%;
+  height:50%;
+  margin-left: 8px;
+}
+
+/*EX1 - CONTEINER*/
+#msg, .c-2{
+  text-align: center;
+  padding: 8  px;
+  font-size:20px;
+}
+#botao{
+  font-weight: 200;
+  width:90px;
+  background:gray;
+  border: double 2px black;
+}
+footer{
+  text-align:center;
+  font-style: italic;
+
+}

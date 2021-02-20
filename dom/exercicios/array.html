@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finanças pessoais</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Contabilidade:</h1>
+    </header>
+
+    <section>
+        <input type="number" id="v1" placeholder="digite os valores">
+        <input type="button" id="botao" value="Adicionar" onclick="registrar()">
+        <select id="resultado" size="8" style="width:250px; margin-top:15px; margin-bottom: 15px;"></select>
+        <input type="button" id="botao" value="Finalizar" onclick="finalizar()"
+            style="margin-left: 170px; margin-top:0px;">
+        <div id="res"></div>
+    </section>
+
+    <script>
+
+        let resultado = document.getElementById('resultado')
+        let v = []
+        function registrar() {
+            let v1 = document.getElementById('v1')
+            v1 = Number(v1.value)
+            v.push(v1)
+            let item = document.createElement('option')
+            resultado.appendChild(item)
+            item.text = `O valor ${v1} foi adicionado.`
+            res.innerHTML = ''
+        }
+        function finalizar() {
+            let total = v.length
+            let maior = v[0]
+            let menor = v[0]
+            let soma = 0
+            let media = 0
+            let res = document.getElementById('res')
+            for (let posicao in v) {
+                soma += v[posicao]
+                media = soma / (total)
+                if (v[posicao] > maior) {
+                    maior = v[posicao]
+                }
+                if (v[posicao] < menor) {
+                    menor = v[posicao]
+                }
+            }
+
+            res.innerHTML += `Tamanho do vetor: ${total}<br>`
+            res.innerHTML += `O maior valor é ${maior}<br>`
+            res.innerHTML += `O menor valor é ${menor}<br>`
+            res.innerHTML += `A soma dos valores = ${soma}<br>A média é ${media}.`
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>

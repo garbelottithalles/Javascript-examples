@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Condições com JS</title>
+</head>
+
+<body>
+  <h1> Calculando tempo de viagem: </h1>
+  <input type="number" name="txtv" id="txtv" placeholder="Digite a velocidade.." />
+  <br />
+  <input type="number" name="txtd" id="txtd" placeholder="Digite a distancia.." />
+  <br />
+  <input type="button" name="botao" id="botao" value="Calcular Tempo" onclick="calcular()" />
+  <div id="resultado">
+    Tempo da Viagem
+  </div>
+  <script>
+    function calcular() {
+      var texto_v = document.getElementById('txtv')
+      var texto_d = document.getElementById('txtd')
+      var result = document.getElementById('resultado')
+      var v = Number(texto_v.value)
+      var d = Number(texto_d.value)
+      t = (d / v)
+      if (t > 1) {
+        result.innerHTML = `Tempo de Viagem: ${t} horas.`
+      }
+      if (t > 0 && t < 1) {
+        result.innerHTML = `Tempo de Viagem: ${t} hora.`
+      }
+    }
+  </script>
+
+
+</body>
+
+</html>

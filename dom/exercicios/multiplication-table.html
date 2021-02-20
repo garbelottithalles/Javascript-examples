@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabuadas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Tabuada:</h1>
+    </header>
+
+    <section>
+        <div class="c-2">
+            <input type="number" id="n1" placeholder="Digite o multiplicador.."> 
+            X
+            <input type="number" id="n2" placeholder="Digite o fim da tabuada..">
+            <input type="button" value="=" id="x" onclick="mult()">
+        </div>
+        <div id="conteudo">
+        </div>
+    </section>
+    <footer> &copy Thalles Garbelotti</footer>
+    <script>
+        function mult(){
+            var n1 = document.getElementById('n1')
+            n1 = Number(n1.value)
+            var n2 = document.getElementById('n2')
+            n2 = Number(n2.value)
+            var conteudo = document.getElementById('conteudo')
+
+            for(var i = 1; i<=n2; i++){
+                var res = i * n1
+                conteudo.innerHTML += ` ${i} X ${n1} = ${res} <br>`
+                conteudo.style.border =  '2px dashed blue'          
+             }
+        }
+    </script>
+    
+</body>
+</html>
